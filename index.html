@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./image.png" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="Wrapper">
+        <div class = "checkboxes">
+            <label for="LowerLetter">Include Lower Letters</label>
+            <input type="checkbox" name="checkBox" id="LowerLetter" value="Lower" checked>
+            <label for="UpperLetter">Include Upper Letters</label>
+            <input type="checkbox" name="checkBox" id="UpperLetter" value="Upper">
+            <label for="Numbers">Include Numbers</label>
+            <input type="checkbox" name="checkBox" id="Numbers" value="Numbers" checked>
+            <label for="Symbols">Include Symbols</label>
+            <input type="checkbox" name="checkBox" id="Symbols" value="Symbols">
+            <div class="slidecontainer">
+                <div class="sliderTextWrapper">
+                    <p class = "sliderText">Choose Length</p>
+                    <div class = "sliderText box"></div>
+                </div>
+                
+                <input type="range" min="8" max="50" value="16" class="slider" id="myRange" name = "myRange">
+            </div>
+        </div>
+        
+        <div class="textAreaWrapper">
+            <input type="text" class = "textArea" 
+            id="t1" name="textArea" 
+            placeholder="Generated Password">
+        </div>
+        <div class = "buttonWrapper">
+            <div class="button gen" id="a">
+                Generate Password
+            </div>
+            <div class="button cop" id="b">
+                Copy Password
+            </div>
+        </div>
+    </div>
+    <div class="author">
+        Created By : Aditya Narayan
+    </div>
+    <script src="./script.js">console.log("Cunt")</script>
+
+</body>
+</html>
